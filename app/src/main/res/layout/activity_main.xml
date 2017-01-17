@@ -8,6 +8,7 @@
     android:background="@color/mainBackground"
     android:fitsSystemWindows="true"
     tools:context="com.alexb8466gmail.faaapps.MainActivity">
+
     <android.support.design.widget.CoordinatorLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent"
@@ -23,10 +24,24 @@
 
 
         android:background="?attr/colorPrimary"
-        >
-    </android.support.v7.widget.Toolbar>
+       />
+        <android.support.design.widget.TabLayout
+            android:id="@+id/tabLayout"
+            android:layout_height="wrap_content"
+            android:layout_width="match_parent"
+            app:tabIndicatorColor="@color/colorWhite"
+            app:tabIndicatorHeight="6dp"
+            app:tabSelectedTextColor="@color/colorWhite"
+            app:tabTextColor="@color/colorWhite"
 
+            />
     </android.support.design.widget.AppBarLayout>
+        <android.support.v4.view.ViewPager
+            android:id="@+id/viewPager"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            />
+
     </android.support.design.widget.CoordinatorLayout>
 
 
@@ -37,5 +52,5 @@
         android:layout_gravity="start"
         app:menu="@menu/menu_navigation"
         app:headerLayout="@layout/navigation_header"
-        ></android.support.design.widget.NavigationView>
+       />
 </android.support.v4.widget.DrawerLayout>
